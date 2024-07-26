@@ -1,6 +1,5 @@
-const carrito = [];
 
-const mostrarProductos = () => {
+/* const mostrarProductos = () => {
     let listaProductos = "Productos Disponibles:\n";
     productos.forEach(producto => {
         listaProductos += `${producto.id}: ${producto.nombre} - $${producto.precio}\n`;
@@ -59,10 +58,58 @@ const seleccionProductos = () => {
 
     alert(`Total de su compra: $${calcularTotal()}`);
 
-};
+};  */
 
 
 /* seleccionProductos(); */
+
+const carrito = [];
+
+
+const contenedorProductos = document.getElementById('listaProductos');
+const verCarrito = document.getElementById("verCarrito");
+
+
+
+productos.forEach((producto) => {
+    let cardProducto = document.createElement('div');
+    cardProducto.innerHTML = `
+        <div class="prod">
+            <img src="${producto.img}">
+            <h3 class="card-title">${producto.nombre}</h3>
+            <p class="card-text">${producto.descripcion}</p>
+            <p class="card-text">Precio: $${producto.precio}</p>
+        </div>
+     `;
+
+    contenedorProductos.appendChild(cardProducto);
+
+    let comprar = document.createElement("button")
+    comprar.innerText = "comprar"
+    comprar.className = "comprar"
+
+    cardProducto.append(comprar)
+
+
+    comprar.addEventListener("click", () =>{
+        carrito.push({
+            id : producto.id,
+            img: producto.img,
+            nombre: producto.nombre,
+            precio: producto.precio,
+        })
+        console.log(carrito);
+    })  
+}); 
+
+
+
+
+verCarrito.addEventListener("click", () =>{
+    console.log("holafnciona");
+})
+
+
 
 
 

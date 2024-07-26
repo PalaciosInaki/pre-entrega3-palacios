@@ -5,6 +5,7 @@ const productos = [
         descripcion: "Tarjeta grafica gama media-alta",
         precio: 500,
         cantidad: 0,
+        img: './images/video-geforce-rtx-4080-16gb-msi-gaming-x-trio-0.jpg',
     },
     {
         nombre: "Pc Gamer Prearmada",
@@ -12,6 +13,7 @@ const productos = [
         descripcion: "Pc armada pensada para las necesidades de juegos actuales",
         precio: 1000,
         cantidad: 0,
+        img: './images/pc_amd-7401-b81b0560b78bd447e316373419933297-640-0.png',
     },
     {
         nombre: "Combo Perifericos Hyper X",
@@ -19,6 +21,7 @@ const productos = [
         descripcion: "Kit de perifericos gamer primera marca",
         precio: 250,
         cantidad: 0,
+        img: './images/1019-producto-combo-hyperx-1321.jpg',
     },
     {
         nombre: "CPU Watercooling MSI",
@@ -26,6 +29,7 @@ const productos = [
         descripcion: "Sistema de refrigeracion liquida MSI",
         precio: 500,
         cantidad: 0,
+        img: './images/imagen.jpg',
     },
     {
         nombre: "CPU Intel I9 9900k",
@@ -33,6 +37,7 @@ const productos = [
         descripcion: "Procesador 8 nucleos, Velocidad de reloj 3.6 GHz",
         precio: 800,
         cantidad: 0,
+        img: './images/s-l1200.jpg',
     },
     {
         nombre: "Modulo RAM KINGSTON 16GB RGB",
@@ -40,5 +45,6 @@ const productos = [
         descripcion: "Memoria ram kingston 3200mhz",
         precio: 200,
         cantidad: 0,
+        img: './images/88f86d09-ad01-434c-8084-50547eb5e83b.ca6fade901fb02d0688b3239f4a13794.webp',
     },
 ];

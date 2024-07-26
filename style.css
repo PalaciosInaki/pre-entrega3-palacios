@@ -1,0 +1,56 @@
+/* ///////////////////////Productos//////////////////////////////////*/
+.productos-main {
+    }
+  
+  .productos-main h3 {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    width: 70%;
+    margin: auto;
+    padding: 10px; }
+  
+  .productos-main .productos {
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .productos-main .productos .prod {
+      width: 350px;
+      height: 485px;
+      text-align: center;
+      padding: 0%;
+      margin: 0%;
+      border-radius: 6px;
+      background: white;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      transition: all 400ms ease;
+      cursor: pointer; }
+      .productos-main .productos .prod img {
+        height: 280px; }
+      .productos-main .productos .prod button {
+        background-color: black;
+        font-family: "Poppins", sans-serif;
+        color: #9FCC2E;
+        font-size: medium;
+        border-radius: 5px;
+        height: 30px;
+        width: 160px;
+        margin-top: 15px;
+        cursor: pointer; }
+    .productos-main .productos .prod:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%); }
+
+
+
+/* //////////////////////////// CARRITO //////////////////////////////////////*/
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+
+}
+

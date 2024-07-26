@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre Entrega 1 Palacios</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <h1>Bamboo PC</h1>
+    <nav>
+        <h1>Bamboo PC</h1>
+        <button id="verCarrito">🛒</button>
+    </nav>
 
-    <div id="lista-productos" class="row">
-        <!-- Aca se generan las cards de productos -->
+
+    <main class="productos-main">
+        <div id="listaProductos" class="productos">
+            <!-- Aca se generan las cards de productos -->
+        </div>
+    </main>
+
+    <h2>Carrito</h2>
+    <button id="btnCarrito" class="btn-carrito">Mostrar Carrito</button>
+    <div id="carritoContenido">
+        <!-- Generar contenido carrito push -->
     </div>
+    <button id="cerrarCarrito" class="btn-carrito">Cerrar Carrito</button>
 
 
-    
-    <script src="./generarCardsProductos.js"></script>
-    <script src="./productos.js"></script>
-    <script src="./main.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
