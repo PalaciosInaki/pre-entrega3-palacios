@@ -4,7 +4,7 @@ const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
 const contadorCarrito = document.getElementById("contadorCarrito");
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("compra")) || [];
 
 
 productos.forEach((producto) => {
@@ -52,9 +52,20 @@ productos.forEach((producto) => {
         }
 
         carritoCounter();
+        guardadoLocal();
     }) ; 
 }); 
 
+
+
+/* //////// LOCAL STORAGE///////////// */
+
+/* set */
+const guardadoLocal = () =>{
+    localStorage.setItem("compra", JSON.stringify(carrito))
+}
+
+/* get = se guarda lo que tengo en el local storage directamente en el carrito PRIMERA LINEA*/
 
 
 
