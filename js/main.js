@@ -107,6 +107,8 @@ productos.forEach((producto) => {
 
 
 verCarrito.addEventListener("click", () =>{
+    modalContainer.innerHTML = " ";
+    modalContainer.style.display = "flex";
 
     const modalHeader = document.createElement("div")
     modalHeader.className = "modal-header"
@@ -119,6 +121,10 @@ verCarrito.addEventListener("click", () =>{
     const modalbutton = document.createElement ("button")
     modalbutton.innerText = "X"
     modalbutton.className = "modal-header-button"
+
+    modalbutton.addEventListener("click", () =>{
+        modalContainer.style.display = "none";
+    })
 
     modalHeader.append(modalbutton);
 

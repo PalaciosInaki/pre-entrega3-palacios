@@ -14,7 +14,7 @@
     flex-direction: row;
     min-height: 400px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center; }
     .productos-main .productos .prod {
       width: 350px;
@@ -104,6 +104,8 @@ nav{
 
 .modal-header-button {
   cursor: pointer;
+  height: 80px;
+  width: 80px;
 }
 
 .modalContentContainer{
