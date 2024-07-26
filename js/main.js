@@ -68,6 +68,7 @@ const carrito = [];
 
 const contenedorProductos = document.getElementById('listaProductos');
 const verCarrito = document.getElementById("verCarrito");
+const modalContainer = document.getElementById("modal-container");
 
 
 
@@ -97,17 +98,45 @@ productos.forEach((producto) => {
             img: producto.img,
             nombre: producto.nombre,
             precio: producto.precio,
-        })
-        console.log(carrito);
-    })  
+        });
+    }) ; 
 }); 
 
 
 
 
 verCarrito.addEventListener("click", () =>{
-    console.log("holafnciona");
-})
+
+    const modalHeader = document.createElement("div")
+    modalHeader.className = "modal-header"
+    modalHeader.innerHTML= `
+       <h1 class="modal-header-title">Carrito</h1>
+    `;
+
+    modalContainer.append(modalHeader)
+
+    const modalbutton = document.createElement ("button")
+    modalbutton.innerText = "X"
+    modalbutton.className = "modal-header-button"
+
+    modalHeader.append(modalbutton);
+
+
+    carrito.forEach((producto) => {
+
+        let carritoContent = document.createElement("div")
+        carritoContent.className = "modal-content"
+        carritoContent.innerHTML = `
+           <img src="${producto.img}">
+           <h3>${producto.nombre}</h3>
+           <p>Precio: $${producto.precio}</p>
+
+        `;
+
+        modalContainer.append(carritoContent);
+    });
+
+});
 
 
 
