@@ -2,6 +2,7 @@
 const contenedorProductos = document.getElementById('listaProductos');
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
+const contadorCarrito = document.getElementById("contadorCarrito");
 
 let carrito = [];
 
@@ -50,8 +51,7 @@ productos.forEach((producto) => {
             });
         }
 
-
-        
+        carritoCounter();
     }) ; 
 }); 
 

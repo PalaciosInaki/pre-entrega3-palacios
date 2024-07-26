@@ -160,3 +160,18 @@ nav button{
   padding: 10px;
   font-size: 150%;
 }
+
+/* /////////////////////////////// Contador carrito ///////////////////////////*/
+
+.contador-carrito{
+  background-color: orangered;
+  color: white;
+  border-radius: 30%;
+  font-size: 12px;
+  padding: 3px;
+  top: 55px;
+  right: 14px;
+  position: absolute;
+  display: none;
+  width: 12px;
+}

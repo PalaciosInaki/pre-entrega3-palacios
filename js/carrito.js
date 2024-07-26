@@ -74,6 +74,11 @@ const eliminarProducto = () => {
     });
 
     pintarCarrito();
+    carritoCounter();
 }; 
 
 
+const carritoCounter = () => {
+    contadorCarrito.style.display = "block";
+    contadorCarrito.innerText = carrito.length;
+}
