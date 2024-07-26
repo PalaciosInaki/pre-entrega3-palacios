@@ -31,6 +31,8 @@ const pintarCarrito = () => {
 
         let carritoContent = document.createElement("div")
         carritoContent.className = "modal-content"
+        carritoContent.dataset.id = producto.id; // Almacena el id del producto
+
         carritoContent.innerHTML = `
            <img src="${producto.img}">
            <h3>${producto.nombre}</h3>
@@ -41,9 +43,11 @@ const pintarCarrito = () => {
         modalContentContainer.append(carritoContent);
 
         let eliminar= document.createElement("span");
-        eliminar.innerText = "🗑️"
+        eliminar.innerText = "❌"
         eliminar.className = "eliminar-producto";
         carritoContent.append(eliminar);
+
+        eliminar.addEventListener("click", eliminarProducto);
 
     });
 
@@ -57,3 +61,16 @@ const pintarCarrito = () => {
 }
 
 verCarrito.addEventListener("click", pintarCarrito);
+
+
+const eliminarProducto = () => {
+    const foundId = carrito.find((elemento) => elemento.id);
+
+    carrito = carrito.filter ((carritoId) => {
+        return carritoId !== foundId;
+    });
+
+    pintarCarrito();
+}; 
+
+

@@ -1,11 +1,9 @@
 
-const carrito = [];
-
-
 const contenedorProductos = document.getElementById('listaProductos');
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
 
+let carrito = [];
 
 
 productos.forEach((producto) => {
