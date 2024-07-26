@@ -28,13 +28,30 @@ productos.forEach((producto) => {
 
 
     comprar.addEventListener("click", () =>{
-        carrito.push({
-            id : producto.id,
-            img: producto.img,
-            nombre: producto.nombre,
-            precio: producto.precio,
-            cantidad: producto.cantidad,
-        });
+
+        /* Verifico si el producto ya esta en el carrito */
+
+        const productoRepetido = carrito.find(prod => prod.id === producto.id);
+        
+        if (productoRepetido){
+            carrito.map((prod) => {
+                if (prod.id === producto.id){
+                    prod.cantidad++;
+                }
+            });
+
+        }else{
+            carrito.push({
+                id : producto.id,
+                img: producto.img,
+                nombre: producto.nombre,
+                precio: producto.precio,
+                cantidad: producto.cantidad,
+            });
+        }
+
+
+        
     }) ; 
 }); 
 

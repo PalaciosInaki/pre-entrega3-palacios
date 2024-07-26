@@ -38,6 +38,8 @@ const pintarCarrito = () => {
            <h3>${producto.nombre}</h3>
            <p>Precio: $${producto.precio}</p>
            <p>Cantidad: ${producto.cantidad}</p>
+           <p>Total: ${producto.cantidad * producto.precio}</p>
+
 
         `;
 
@@ -52,7 +54,7 @@ const pintarCarrito = () => {
 
     });
 
-    const total = carrito.reduce((acc, prod) => acc + prod.precio, 0);
+    const total = carrito.reduce((acc, prod) => acc + prod.precio * prod.cantidad, 0);
 
     const totalCompra = document.createElement("div");
     totalCompra.className = "total-container";

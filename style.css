@@ -29,6 +29,7 @@
       transition: all 400ms ease;
       cursor: pointer; }
       .productos-main .productos .prod img {
+        max-width: 333px;
         height: 280px; }
       .productos-main .productos .prod button {
         background-color: black;
@@ -118,7 +119,7 @@ nav button{
 
 .modalContentContainer{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -127,20 +128,23 @@ nav button{
 
 }
 .modal-content {
-  width: 350px;
-  height: 350px;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 250px;
   text-align: center;
   padding: 0%;
-  margin: 2%;
-  margin-bottom: 55px;
+  margin: 1px;
   border-radius: 6px;
   background: white;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  transition: all 400ms ease;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .modal-content img {
   height: 230px;
+  width: 230px;
 }
 
 .modal-content .eliminar-producto{
@@ -154,5 +158,5 @@ nav button{
   width: 30%;
   margin: auto;
   padding: 10px;
-  font-size: 110%;
+  font-size: 150%;
 }
