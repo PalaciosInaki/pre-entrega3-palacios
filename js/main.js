@@ -86,7 +86,7 @@ productos.forEach((producto) => {
     contenedorProductos.appendChild(cardProducto);
 
     let comprar = document.createElement("button")
-    comprar.innerText = "comprar"
+    comprar.innerText = "SUMAR AL CARRITO"
     comprar.className = "comprar"
 
     cardProducto.append(comprar)
@@ -121,6 +121,12 @@ verCarrito.addEventListener("click", () =>{
 
     modalHeader.append(modalbutton);
 
+    const modalContentContainer = document.createElement ("div")
+    modalContentContainer.className = "modalContentContainer"
+
+    modalContainer.append(modalContentContainer);
+
+
 
     carrito.forEach((producto) => {
 
@@ -133,7 +139,7 @@ verCarrito.addEventListener("click", () =>{
 
         `;
 
-        modalContainer.append(carritoContent);
+        modalContentContainer.append(carritoContent);
     });
 
     const total = carrito.reduce((acc, prod) => acc + prod.precio, 0);
