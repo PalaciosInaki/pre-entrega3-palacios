@@ -136,7 +136,16 @@ verCarrito.addEventListener("click", () =>{
         modalContainer.append(carritoContent);
     });
 
+    const total = carrito.reduce((acc, prod) => acc + prod.precio, 0);
+
+    const totalCompra = document.createElement("div");
+    totalCompra.className = "total-container";
+    totalCompra.innerHTML = `Total a pagar: $${total}`;
+    
+    modalContainer.append(totalCompra);
 });
+
+
 
 
 
