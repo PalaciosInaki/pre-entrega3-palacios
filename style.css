@@ -122,7 +122,8 @@ nav button{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  background-color: #ebeaea;
 
 }
 .modal-content {
@@ -131,6 +132,7 @@ nav button{
   text-align: center;
   padding: 0%;
   margin: 2%;
+  margin-bottom: 55px;
   border-radius: 6px;
   background: white;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
