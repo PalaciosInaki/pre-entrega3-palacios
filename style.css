@@ -21,7 +21,8 @@
       height: 485px;
       text-align: center;
       padding: 0%;
-      margin: 0%;
+      margin-left: 15px;
+      margin-right: 15px;
       border-radius: 6px;
       background: white;
       box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -43,10 +44,19 @@
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
       transform: translateY(-3%); }
 
+.div-prod{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .comprar {
-  width: 350px;
-  height: 30px;
-  font-weight: bolder;
+  width: 100px;
+  height: 35px;
+  color: rgb(255, 255, 255);
+  background-color: orangered;
+  border-radius: 10%;
+  border-color: orangered;
 }
 
 
@@ -83,7 +93,7 @@ nav{
 .modal-header {
   display: flex;
   justify-content: space-between;
-  background-color: slategrey;
+  background-color: orangered;
   color: white;
   width: 100%;
 }

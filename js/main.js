@@ -74,6 +74,7 @@ const modalContainer = document.getElementById("modal-container");
 
 productos.forEach((producto) => {
     let cardProducto = document.createElement('div');
+    cardProducto.className = "div-prod"
     cardProducto.innerHTML = `
         <div class="prod">
             <img src="${producto.img}">
@@ -86,7 +87,7 @@ productos.forEach((producto) => {
     contenedorProductos.appendChild(cardProducto);
 
     let comprar = document.createElement("button")
-    comprar.innerText = "SUMAR AL CARRITO"
+    comprar.innerText = "COMPRAR"
     comprar.className = "comprar"
 
     cardProducto.append(comprar)
